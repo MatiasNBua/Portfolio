@@ -1,0 +1,85 @@
+/* container technologies */
+.container-technologies {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 8px;
+    margin: 16px;
+    padding: 16px;
+}
+
+.container-slider{
+    height: 80px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: -5;
+    border-radius: 100px;
+}
+
+/* Shadow Technologies */
+.container-slider::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to left, rgb(36, 36, 36), rgba(36, 36, 36,0));
+  }
+
+.container-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(36, 36, 36), rgba(36, 36, 36,0));
+  }
+
+/* End Shadow Technologies */
+
+#slider {
+    width: 1500px;
+    height: 80px;
+    background-image: url(/src/assets/Tecnologies.svg);
+    background-size: 100% 100%;
+    animation: slider 40s infinite linear;
+}
+
+@keyframes slider{
+    to{
+        background-position: -1500px;
+    }
+}
+/* End container technologies */
+
+/* Container Services Quality */
+.container-services-quality{
+    padding: 16px;
+    margin: 16px;
+}
+
+.services-quality{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services img {
+    transition: transform 0.3s ease; /* Ajusta la duración y el tipo de transición según tus necesidades */
+}
+  
+  .services img:hover {
+    transform: translateY(-5px); /* Ajusta la cantidad de desplazamiento hacia arriba según tus necesidades */
+    box-shadow: 0 5px 0 0 rgb(205, 249, 255);
+    border-radius: 16px;
+}
+/*  End Container Services Quality */

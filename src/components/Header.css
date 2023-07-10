@@ -1,7 +1,12 @@
 .container-header{
+    position: fixed;
+    z-index: 9999;
     display: flex;
     border-bottom: 2px solid #7C7B84;
     height: 88px;
+    width: 100%;
+    top: 0;
+    background-color: #1C1C1F;
 }
 
 .container-logo{
@@ -9,7 +14,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-left: 2px solid #7C7B84;
+    /* border-left: 2px solid #7C7B84; */
 }
 
 .container-middle-section{
@@ -29,7 +34,7 @@
     gap: 1rem;
     justify-content: center;
     width: 15%;
-    border-right: 2px solid #7C7B84;
+    /* border-right: 2px solid #7C7B84; */
 }
 
 .container-nav{

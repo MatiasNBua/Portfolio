@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import './ChangeWord.css'
 
-export default function ChangeWord ()  {
-  const [words, setWords] = useState(['Palabra 1', 'Palabra 2', 'Palabra 3']);
+export default function ChangeWord ({ words })  {
+  // const [words, setWords] = useState(['Developer', 'Front-end', 'Back-end', 'Freelancer']);
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentWord, setCurrentWord] = useState(words[0]);
 
@@ -17,12 +18,12 @@ export default function ChangeWord ()  {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [words]);
   
 
 
   return (
-    <h1>{currentWord}</h1>
+    <h1 className='change-word'>{currentWord}</h1>
   );
 };
 

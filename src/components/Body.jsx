@@ -1,21 +1,23 @@
-import Header from './Header'
-import Footer from './Footer'
+import AboutMe from './AboutMe'
+import Proyects from './Proyects'
+import ContactMe from './ContactMe'
+import Tecnhologie from './Tecnhologie'
+
 
 import './Body.css'
 
-export default function Body (){
+export default function Body() {
 
-    return(
-        <div className="container-body">
+    return (
+        <div className="full-container-body">
+            <div className="container-body">
 
-            <div className="header">
-            <Header/>
+                <AboutMe/>
+                <Tecnhologie />
+                <Proyects />
+                <ContactMe/>
+
             </div>
-
-            <div className="footer">
-            <Footer/>
-            </div>
-            
         </div>
     )
 }

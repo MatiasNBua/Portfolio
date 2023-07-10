@@ -1,6 +1,7 @@
 // import { useState } from 'react'
 import Body from './components/Body'
-import Word from './components/ChangeWord'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 import './App.css'
 
@@ -9,8 +10,9 @@ function App() {
 
   return (
     <div className="container-app">
-    {/* <Body/> */}
-    <Word/>
+    <Header/>
+    <Body/>
+    <Footer/>
     </div>
   )
 }

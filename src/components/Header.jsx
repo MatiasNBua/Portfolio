@@ -1,6 +1,5 @@
 import Logo from '../assets/Logo.svg'
 import Online from '../assets/button-Online.svg'
-import UploadingLane from '../assets/uploading-bar-nav.svg'
 import LinkedinLogo from '../assets/rrss-Linkedin.svg'
 import GitHubLogo from '../assets/rrss-GitHub.svg'
 
@@ -16,24 +15,21 @@ export default function Header() {
             </div>
             <div className="container-middle-section">
                 <img src={Online} alt="" />
-                <div className="container-nav">
-                    <div className="nav-section">
-                        <p> Sobre mi </p>
-                        <img className="uploading-bar" src={UploadingLane} alt="" />
-                    </div>
-                    <div className="nav-section">
-                        <p> Proyectos </p>
-                        <img className="uploading-bar" src={UploadingLane} alt="" />
-                    </div>
-                    <div className="nav-section">
-                        <p> Sobre mi </p>
-                        <img className="uploading-bar" src={UploadingLane} alt="" />
-                    </div>
-                    <div className="nav-section">
-                        <p> Sobre mi </p>
-                        <img className="uploading-bar" src={UploadingLane} alt="" />
-                    </div>
-                </div>
+                <ul className="container-nav">
+                    <li className="nav-section">
+                        <a href='#aboutme'> Sobre mi </a>
+                    </li>
+                    <li className="nav-section">
+                        <a href='#proyects'> Proyectos </a>
+                    </li>
+                    <li className="nav-section">
+                        <a href='#tecnhologie'> Tecnologias</a>
+                        {/* <img src={Toogle} alt="" /> */}
+                    </li>
+                    <li className="nav-section">
+                        <a href='#contactme'> Contactame </a>
+                    </li>
+                </ul>
             </div>
             <div className="container-social-network">
                 <img src={LinkedinLogo} alt="" />
