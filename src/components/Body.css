@@ -13,6 +13,9 @@
 
 .container-body{
     width: 77%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 /* end container body */
 

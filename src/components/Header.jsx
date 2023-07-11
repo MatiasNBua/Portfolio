@@ -23,16 +23,15 @@ export default function Header() {
                         <a href='#proyects'> Proyectos </a>
                     </li>
                     <li className="nav-section">
-                        <a href='#tecnhologie'> Tecnologias</a>
-                        {/* <img src={Toogle} alt="" /> */}
-                    </li>
-                    <li className="nav-section">
                         <a href='#contactme'> Contactame </a>
                     </li>
                 </ul>
             </div>
             <div className="container-social-network">
+                <a href="https://www.linkedin.com/in/matias-bua/" target='_blank'>
                 <img src={LinkedinLogo} alt="" />
+                </a>
+
                 <img src={GitHubLogo} alt="" />
             </div>
         </div>

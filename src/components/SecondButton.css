@@ -1,0 +1,15 @@
+.second-button{
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #4d4d4d;
+    border-radius: 24px;
+    padding: 0px 24px;
+    color: #5c5c61;
+}
+
+.second-button:hover{
+    border: 1px solid #8fa1a9;
+    background-color: #1C1C1F;
+    font-weight: bold;
+    color: #6f6f74;
+}

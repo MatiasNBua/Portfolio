@@ -1,9 +1,25 @@
+
+.container-full-top{
+    display: flex;
+}
+
+.container-full-bot{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 140px;
+}
+/* ------------------------------------ */
+
+/* ------------------------------------ */
 .container-aboutme {
     margin: 16px;
     padding: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 140px;
 }
 
 .description-aboutme {
@@ -18,7 +34,104 @@
     gap: 12px;
 }
 .container-buttons-aboutme{
+    height: 60px;
+    width: 25%;
+    padding: 8px;
     display: flex;
     gap: 48px;
-    padding: 8px
+    align-items: center;
+    justify-content: space-around;
+}
+/* ------------------------------------ */
+
+/* ------------------------------------ */
+/* container technologies */
+.container-technologies {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+.container-slider{
+    height: 80px;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    z-index: -5;
+    border-radius: 100px;
+}
+
+/* Shadow Technologies */
+.container-slider::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to left, rgb(36, 36, 36), rgba(36, 36, 36,0));
+  }
+
+.container-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(36, 36, 36), rgba(36, 36, 36,0));
+  }
+
+/* End Shadow Technologies */
+/* ------------------------------------ */
+
+/* ------------------------------------ */
+#slider {
+    width: 1750px;
+    height: 80px;
+    background-image: url(/src/assets/Tecnologies.svg);
+    background-size: 100% 100%;
+    animation: slider 40s infinite linear;
+}
+
+@keyframes slider{
+    to{
+        background-position: -1500px;
+    }
+}
+/* End container technologies */
+/* ------------------------------------ */
+
+/* ------------------------------------ */
+/* Container Services Quality */
+.services-quality{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.services{
+    display: flex;
+    justify-content: space-between;
+}
+
+.services img {
+    transition: transform 0.3s ease; /* Ajusta la duración y el tipo de transición según tus necesidades */
+}
+  
+  .services img:hover {
+    transform: translateY(-5px); /* Ajusta la cantidad de desplazamiento hacia arriba según tus necesidades */
+    box-shadow: 0 5px 0 0 rgb(205, 249, 255);
+    border-radius: 16px;
+}
+/*  End Container Services Quality */
+/* ------------------------------------ */
+
+/* ------------------------------------ */
+.container-buttons-aboutme .button:hover{
+    border: 1px solid #8fa1a9;
+    background-color: #1C1C1F;
+    font-weight: bold;
 }
