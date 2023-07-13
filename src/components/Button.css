@@ -1,8 +1,50 @@
-.button{
+.button {
+    width: 50%;
     height: 48px;
     background-color: transparent;
     border: 1px solid #7C7B84;
     border-radius: 24px;
     padding: 0px 24px;
     color: #ffffff;
-}
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button:hover {
+    border: 1px solid #8fa1a9;
+    background-color: #1C1C1F;
+    font-weight: bold;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 0 0 rgb(205, 255, 240);
+    border-radius: 24px;
+  }
+  
+  /* .button-container {
+    position: relative;
+    width: 200px;
+    height: 50px;
+  }
+  
+  .button-container:not(:hover) .oculto {
+    opacity: 0;
+    transition-delay: 0s;
+  }
+  
+  .button-container:hover .oculto {
+    opacity: 1;
+    transition-delay: 0.3s;
+  }
+  
+  .oculto {
+    position: absolute;
+    border-radius: 32px;
+    z-index: -1;
+    top: 10px;
+    left: 1px;
+    width: 115px;
+    height: 45px;
+    background-color: red; Cambia el color a tu elección 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+   */

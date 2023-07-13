@@ -38,3 +38,9 @@
     justify-content: center;
     gap: 6px;
 }
+
+.container-social-network-footer a:hover img{
+    display: flex;
+    box-shadow: 2px 2px 30px rgb(205, 249, 255);
+    border-radius: 26px;
+}

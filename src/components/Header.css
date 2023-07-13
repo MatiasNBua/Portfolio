@@ -14,7 +14,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border-left: 2px solid #7C7B84; */
 }
 
 .container-middle-section{
@@ -34,7 +33,12 @@
     gap: 1rem;
     justify-content: center;
     width: 15%;
-    /* border-right: 2px solid #7C7B84; */
+}
+
+.container-social-network a:hover img{
+    display: flex;
+    box-shadow: 2px 2px 30px rgb(205, 249, 255);
+    border-radius: 26px;
 }
 
 .container-nav{
@@ -42,6 +46,10 @@
     width: 35%;
     padding: 8px;
     justify-content: space-evenly;
+}
+
+.link{
+    color: white;
 }
 
 .nav-section{

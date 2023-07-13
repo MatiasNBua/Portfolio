@@ -10,7 +10,8 @@
 .buttons-of-contactme{
     display: flex;
     gap: 48px;
-    padding: 8px
+    padding: 8px;
+    width: 45%;
 }
 
 /* end of contact me */

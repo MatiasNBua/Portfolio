@@ -33,14 +33,24 @@
     justify-content: center;
     gap: 12px;
 }
+
+.title-changewords{
+    display: flex;
+    gap: 32px;
+}
+
 .container-buttons-aboutme{
     height: 60px;
-    width: 25%;
+    width: 40%;
     padding: 8px;
     display: flex;
     gap: 48px;
     align-items: center;
     justify-content: space-around;
+}
+
+.container-img-aboutme{
+    display: flex;
 }
 /* ------------------------------------ */
 
@@ -61,6 +71,10 @@
     position: relative;
     z-index: -5;
     border-radius: 100px;
+}
+
+.h4{
+    color: #8D8C96;
 }
 
 /* Shadow Technologies */
@@ -89,7 +103,7 @@
 
 /* ------------------------------------ */
 #slider {
-    width: 1750px;
+    width: 1400px;
     height: 80px;
     background-image: url(/src/assets/Tecnologies.svg);
     background-size: 100% 100%;
@@ -98,7 +112,7 @@
 
 @keyframes slider{
     to{
-        background-position: -1500px;
+        background-position: -1400px;
     }
 }
 /* End container technologies */
@@ -124,14 +138,33 @@
   .services img:hover {
     transform: translateY(-5px); /* Ajusta la cantidad de desplazamiento hacia arriba según tus necesidades */
     box-shadow: 0 5px 0 0 rgb(205, 249, 255);
-    border-radius: 16px;
+    border-radius: 20px;
+}
+
+.service{
+    width: 300px;
 }
 /*  End Container Services Quality */
 /* ------------------------------------ */
 
-/* ------------------------------------ */
-.container-buttons-aboutme .button:hover{
-    border: 1px solid #8fa1a9;
-    background-color: #1C1C1F;
-    font-weight: bold;
+
+
+.navigate-services{
+    width: 50%;
+    height: 48px;
+    background-color: transparent;
+    border: 1px solid #7C7B84;
+    border-radius: 24px;
+    padding: 0px 24px;
+    color: #ffffff !important;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigate-services:hover {
+    background-color: rgba(205, 249, 255, 0.545);
+    color: #383838 !important;
 }

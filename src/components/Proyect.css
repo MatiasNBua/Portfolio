@@ -38,8 +38,8 @@
 
 .img-proyect{
     display: flex;
-    width: 271px;
-    height: 149px;
+    width: 545px;
+    height: 300px;
 }
 
 .proyects .proyect{
@@ -61,7 +61,6 @@
 .proyect:hover .img-proyect{
     transform: translateY(-5px); /* Ajusta la cantidad de desplazamiento hacia arriba según tus necesidades */
     box-shadow: 0 5px 0 0 rgb(205, 255, 240);
-    border-radius: 12px;
-    /* z-index: 0; */
+    border-radius: 20px;
 }
 /* End container proyect */
