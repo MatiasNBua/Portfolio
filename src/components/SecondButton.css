@@ -1,16 +1,17 @@
 .second-button{
-    width: 50%;
-    height: 48px;
-    background-color: transparent;
-    border: none;
-    border-radius: 24px;
+    width: 45%;
+    height: 50px;
+    border-radius: 8px;
     padding: 0px 24px;
-    color: #85858C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #bdbdc3 !important;
 }
 
 .second-button:hover{
     border: 1px solid #8fa1a9;
     background-color: #1C1C1F;
     font-weight: 600;
-    color: #bdbdc3;
+    color: #ffffff !important;
 }

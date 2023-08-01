@@ -14,43 +14,68 @@ export default function Proyects() {
             <div className="proyects">
                 <div className="proyect">
                     <div className="text-proyect">
-                        <h4>Sell Your Art</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugiat eligendi voluptas natus ipsum magni eos ullam eaque, amet, nulla molestiae! Soluta voluptates ducimus dolore autem velit doloribus, sapiente sequi.</p>
+                        <h4>Front-End</h4>
+                        <h5>Web Películas</h5>
+                        <p className='description-proyect'>
+                            <b>Aplicación web informativa que dispone de favoritos:</b>
+                            &nbsp;Web de cine con una completa cartelera, donde los usuarios pueden acceder
+                            a la información detallada de diversas películas y, además, tienen la posibilidad de guardar como favoritas aquellas que
+                            les resulten de mayor interés.
+                        </p>
                         <div className="tecnhologies">
-                            <TecnhoProyect text='HTML' />
-                            <TecnhoProyect text='CSS' />
-                            <TecnhoProyect text='JS' />
-                            <TecnhoProyect text='REACT' />
+                            <TecnhoProyect text='HTML5' />
+                            <TecnhoProyect text='CSS3' />
+                            <TecnhoProyect text='JavaScript' />
+                            <TecnhoProyect text='React' />
+                            <TecnhoProyect text='API' />
                         </div>
                     </div>
                     <div className="img-proyect">
                         <img src={PortadaProyect} alt="" />
                     </div>
                 </div>
+
                 <div className="proyect">
                     <div className="text-proyect">
-                        <h4>JUNMAT</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugiat eligendi voluptas natus ipsum magni eos ullam eaque, amet, nulla molestiae! Soluta voluptates ducimus dolore autem velit doloribus, sapiente sequi.</p>
+                        <h4>Full-Stack</h4>
+                        <h5>Sell Your Art</h5>
+                        <p className='description-proyect'>
+                            <b>Aplicación web con funcionalidades CRUD:</b>
+                            &nbsp;Aplicación web de subastas de artesanías. Los usuarios pueden cargar productos con imágenes, precio, descripción,
+                            etc. Estos productos tienen una fecha de finalización, y al concluir, se notificará al ganador por email.
+                        </p>
                         <div className="tecnhologies">
-                            <TecnhoProyect text='HTML' />
-                            <TecnhoProyect text='CSS' />
-                            <TecnhoProyect text='JS' />
-                            <TecnhoProyect text='REACT' />
+                            <TecnhoProyect text='HTML5' />
+                            <TecnhoProyect text='CSS3' />
+                            <TecnhoProyect text='JavaScript' />
+                            <TecnhoProyect text='MongoDB' />
+                            <TecnhoProyect text='React' />
+                            <TecnhoProyect text='Node.js' />
+                            <TecnhoProyect text='Express' />
                         </div>
                     </div>
                     <div className="img-proyect">
                         <img src={PortadaProyect} alt="" />
                     </div>
                 </div>
+
                 <div className="proyect">
                     <div className="text-proyect">
-                        <h4>Post It</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugiat eligendi voluptas natus ipsum magni eos ullam eaque, amet, nulla molestiae! Soluta voluptates ducimus dolore autem velit doloribus, sapiente sequi.</p>
+                        <h4>Full-Stack</h4>
+                        <h5>Post It</h5>
+                        <p className='description-proyect'>
+                            <b>Aplicación web con funcionalidades CRUD:</b>
+                            &nbsp;Aplicación web móvil para crear, modificar y borrar notas personales, con acceso mediante sistema
+                            de usuarios y seguridad JWT. Permite cambiar contraseña y email, además de jugar con temas de diseño.
+                        </p>
                         <div className="tecnhologies">
-                            <TecnhoProyect text='HTML' />
-                            <TecnhoProyect text='CSS' />
-                            <TecnhoProyect text='JS' />
-                            <TecnhoProyect text='REACT' />
+                            <TecnhoProyect text='HTML5' />
+                            <TecnhoProyect text='CSS3' />
+                            <TecnhoProyect text='JavaScript' />
+                            <TecnhoProyect text='React' />
+                            <TecnhoProyect text='Express' />
+                            <TecnhoProyect text='Node.js' />
+                            <TecnhoProyect text='MongoDB' />
                         </div>
                     </div>
                     <div className="img-proyect">

@@ -25,8 +25,7 @@ body {
 
 p{
   margin: 0px;
-  font-size: 24px;
-  color: #8D8C96;
+  font-size: 22px;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -43,12 +42,12 @@ a, a:link, a:visited{
 
 
 h1{
-  font-size: 70px;
+  font-size: 55px;
   font-weight: 900;
 }
 h2{
-  font-size: 55px;
-  font-weight: 800;
+  font-size: 45px;
+  font-weight: 650;
 }
 h3{
   font-size: 40px;
@@ -58,6 +57,16 @@ h4{
   font-size: 32px;
   font-weight: 400;
 }
+
+h5{
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/* h6{
+  font-size: 24px;
+  font-weight: 500;
+} */
 
 button{
   font-size: 18px;

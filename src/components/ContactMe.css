@@ -14,4 +14,68 @@
     width: 45%;
 }
 
+/* ------------------------------------ */
+/* container technologies */
+.container-technologies {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+.container-slider{
+    height: 80px;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    z-index: -5;
+    border-radius: 100px;
+}
+
+.h4{
+    color: #8D8C96;
+}
+
+/* Shadow Technologies */
+.container-slider::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to left, rgb(36, 36, 36), rgba(36, 36, 36,0));
+  }
+
+.container-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(36, 36, 36), rgba(36, 36, 36,0));
+  }
+
+/* End Shadow Technologies */
+/* ------------------------------------ */
+
+/* ------------------------------------ */
+#slider {
+    width: 1400px;
+    height: 80px;
+    background-image: url(/src/assets/Tecnologies.svg);
+    background-size: 100% 100%;
+    animation: slider 40s infinite linear;
+}
+
+@keyframes slider{
+    to{
+        background-position: -1400px;
+    }
+}
+/* End container technologies */
+/* ------------------------------------ */
+
 /* end of contact me */

@@ -31,8 +31,15 @@
     gap: 24px;
 }
 
+.description-proyect{
+    width: 90%;
+    color: #8D8C96;
+}
+
 .tecnhologies{
+    width: 94%;
     display: flex;
+    flex-wrap: wrap;
     gap: 12px;
 }
 

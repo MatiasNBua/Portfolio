@@ -22,7 +22,7 @@ export default function ChangeWord ({ words })  {
 
 
   return (
-    <h1 className='change-word'>{currentWord}</h1>
+    <h2 className='change-word'>{currentWord}</h2>
   );
 };
 

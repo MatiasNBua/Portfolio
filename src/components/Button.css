@@ -1,9 +1,9 @@
 .button {
     width: 50%;
-    height: 48px;
+    height: 50px;
     background-color: transparent;
     border: 1px solid #7C7B84;
-    border-radius: 24px;
+    border-radius: 8px;
     padding: 0px 24px;
     color: #ffffff;
     position: relative;
@@ -12,11 +12,8 @@
   
   .button:hover {
     border: 1px solid #8fa1a9;
-    background-color: #1C1C1F;
+    background-color: rgb(127 255 212);
     font-weight: bold;
-    transform: translateY(-5px);
-    box-shadow: 0 2px 0 0 rgb(205, 255, 240);
-    border-radius: 24px;
   }
   
   /* .button-container {

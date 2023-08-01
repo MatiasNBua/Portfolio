@@ -4,6 +4,7 @@ import ContactMe from './ContactMe'
 
 
 import './Body.css'
+import Experience from './Experience'
 
 export default function Body() {
 
@@ -11,9 +12,10 @@ export default function Body() {
         <div className="full-container-body">
             <div className="container-body">
 
-                <AboutMe/>
+                <AboutMe />
+                <Experience />
                 <Proyects />
-                <ContactMe/>
+                <ContactMe />
 
             </div>
         </div>
