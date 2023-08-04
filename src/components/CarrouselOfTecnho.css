@@ -1,0 +1,109 @@
+/* ------------------------------------ */
+/* container technologies */
+.container-technologies {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    margin: 16px;
+}
+
+.h4{
+    width: 77%;
+    color: var(--parraf-color);
+}
+
+.container-slider{
+    height: 80px;
+    width: fit-content;
+    overflow: hidden;
+    position: relative;
+    z-index: -5;
+    border-radius: 100px;
+}
+
+
+/* Shadow Technologies */
+.container-slider::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to left, rgb(36, 36, 36), rgba(36, 36, 36,0));
+  }
+
+.container-slider::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(36, 36, 36), rgba(36, 36, 36,0));
+  }
+
+/* End Shadow Technologies */
+/* ------------------------------------ */
+
+/* ------------------------------------ */
+#slider {
+    width: 150vh;
+    height: 80px;
+    background-image: url(/src/assets/Tecnologies.svg);
+    background-size: 100% 100%;
+    animation: slider 40s infinite linear;
+}
+
+#slider img{
+    display: none;
+}
+
+@keyframes slider{
+    to{
+        background-position: -150vh;
+    }
+}
+/* End container technologies */
+/* ------------------------------------ */
+
+@media only screen and (min-width: 1250px) and (max-width:1800px) {
+    #slider {
+        width: 135vh;
+        background-size: 100% 100%;
+        animation: slider 30s infinite linear;
+    }
+    
+    @keyframes slider{
+        to{
+            background-position: -135vh;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1250) and (max-width:1450px) {
+    #slider {
+        width: 115vh;
+        background-size: 100% 100%;
+        animation: slider 30s infinite linear;
+    }
+    
+    @keyframes slider{
+        to{
+            background-position: -115vh;
+        }
+    }
+    
+    #slider {
+        background-image: none;
+    }
+
+    #slider img {
+        display: block;
+    }
+}

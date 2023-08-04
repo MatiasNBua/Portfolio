@@ -1,5 +1,8 @@
 import TecnhoProyect from './TecnhologieProyect'
 import PortadaProyect from '../assets/port-project.svg'
+import JUNMAT from '../assets/JUNMAT.svg'
+import JUNMAT1 from '../assets/image 8.svg'
+
 
 import './Experience.css'
 
@@ -8,7 +11,7 @@ export default function Experience() {
     return (
 
         <section id='experience' className="container-experiences">
-            <div className="tite-experience">
+            <div className="title-experience">
                 <h2> Experiencia Laboral: </h2>
             </div>
             <div className="experiences">
@@ -55,7 +58,7 @@ export default function Experience() {
                         </div>
                     </div>
                     <div className="img-experience">
-                        <img src={PortadaProyect} alt="" />
+                        <img className='JUNMAT' src={JUNMAT1} alt="" />
                     </div>
                 </div>
             </div>

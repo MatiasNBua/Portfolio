@@ -1,33 +1,37 @@
-.container-header{
+.container-header {
     position: fixed;
     z-index: 9999;
     display: flex;
-    border-bottom: 2px solid #7C7B84;
+    border-bottom: 2px solid var(--border-color);
     height: 88px;
     width: 100%;
     top: 0;
-    background-color: #1C1C1F;
+    background-color: var(--bgHeader-footer);
 }
 
-.container-logo{
+.container-header.open{
+    height: 300px;
+}
+
+.container-logo {
     width: 15%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container-middle-section{
+.container-middle-section {
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-left: 2px solid #7C7B84;
-    border-right: 2px solid #7C7B84;
-    background: rgb(163,221,252);
-    background: linear-gradient(85deg, rgba(163,221,252,0.8491771708683473) 23%, rgba(197,196,246,0.8939950980392157) 52%, rgba(247,159,239,0.8911939775910365) 86%);
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    background: rgb(163, 221, 252);
+    background: linear-gradient(85deg, rgba(163, 221, 252, 0.8491771708683473) 23%, rgba(197, 196, 246, 0.8939950980392157) 52%, rgba(247, 159, 239, 0.8911939775910365) 86%);
 }
 
-.container-social-network{
+.container-social-network {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -35,24 +39,21 @@
     width: 15%;
 }
 
-.container-social-network a:hover img{
+.container-social-network a:hover img {
     display: flex;
-    box-shadow: 2px 2px 30px rgb(205, 249, 255);
+    box-shadow: 2px 2px 30px var(--bgIcons-services);
     border-radius: 26px;
 }
 
-.container-nav{
+.container-nav {
     display: flex;
-    width: 35%;
+    width: 50%;
     padding: 8px;
     justify-content: space-evenly;
+
 }
 
-.link{
-    color: white;
-}
-
-.nav-section{
+.nav-section {
     padding: 12px;
     border-radius: 16px;
     display: flex;
@@ -60,3 +61,14 @@
     align-items: center;
     justify-content: center;
 }
+
+.container-nav li a:hover{
+    border-bottom: 2px solid var(--border-color);
+}
+
+@media only screen and (min-width: 1200px) and (max-width:1800px) {
+    .container-nav {
+        width: 70%;
+    }    
+}
+

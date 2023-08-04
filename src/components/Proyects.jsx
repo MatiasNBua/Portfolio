@@ -8,7 +8,7 @@ export default function Proyects() {
     return (
 
         <section id='proyects' className="container-proyects">
-            <div className="tite-proyect">
+            <div className="title-proyect">
                 <h2> Proyectos realizados: </h2>
             </div>
             <div className="proyects">

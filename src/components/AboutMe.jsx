@@ -1,16 +1,19 @@
 import ChangeWord from './ChangeWord'
 import Button from './Button'
 import SecondButton from './SecondButton'
-import MyImg from '../assets/img-mt-desktop3.svg'
-import ServiceWeb from '../assets/container-service.svg'
-import CV from '../assets/CV-MatiasBua.pdf'
+import MyImg from '../assets/img-mt-desktop.svg'
+import ServiceWeb from '../assets/serviceDeveloper-web.svg'
+import ServiceSupport from '../assets/support-manteince.svg'
+import ServiceApi from '../assets/gestion-api.svg'
+import ServiceDessing from '../assets/ui.svg'
+import ServiceMovile from '../assets/serviceMovile.svg'
+import ServiceDB from '../assets/serviceDatabase.svg'
 
-import { useState } from 'react'
+import CV from '../assets/CV/CV-MatiasBua.pdf'
 
 import './AboutMe.css'
 
 export default function AboutMe() {
-    const [emailCopied, setEmailCopied] = useState('buamatiashd@gmail.com')
 
     const openPDF = () => {
         window.open(CV)
@@ -34,7 +37,7 @@ export default function AboutMe() {
                         inimaginable.
                     </p>
                     <div className="container-buttons-aboutme">
-                        <Button text='Ver CV' onClick={openPDF}/>
+                        <Button text='Ver CV' onClick={openPDF} />
                         <SecondButton text='Send Email' />
                     </div>
                 </div>
@@ -55,10 +58,12 @@ export default function AboutMe() {
                         </div>
 
                         <div className="services">
-                            <img className='service' src={ServiceWeb} alt="" />
-                            <img className='service' src={ServiceWeb} alt="" />
-                            <img className='service' src={ServiceWeb} alt="" />
-                            <img className='service' src={ServiceWeb} alt="" />
+                            <img className='service' src={ServiceWeb} alt="image of service of developer web" />
+                            <img className='service' src={ServiceMovile} alt="image of service of developer movile" />                        
+                            <img className='service' src={ServiceApi} alt="image of service of API`s" />
+                            <img className='service' src={ServiceDB} alt="image of service of data base" />
+                            <img className='service' src={ServiceDessing} alt="image of service of dessing ui/ux" />
+                            <img className='service' src={ServiceSupport} alt="image of service of maintenance and support" />
                         </div>
                     </div>
                 </div>

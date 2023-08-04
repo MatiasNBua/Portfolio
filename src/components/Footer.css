@@ -5,8 +5,8 @@
     bottom: 0px;
     height: 164px;
     width: 99.83%;
-    background-color: #1C1C1F;
-    border-top: 2px solid #7C7B84;
+    background-color: var(--bgHeader-footer);
+    border-top: 2px solid var(--border-color);
 }
 
 .container-section {
@@ -15,8 +15,8 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-left: 2px solid #7C7B84;
-    border-right: 2px solid #7C7B84;
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
 }
 
 .logo-copyRigth {
@@ -41,6 +41,6 @@
 
 .container-social-network-footer a:hover img{
     display: flex;
-    box-shadow: 2px 2px 30px rgb(205, 249, 255);
+    box-shadow: 2px 2px 30px var(--bgIcons-services);
     border-radius: 26px;
 }
