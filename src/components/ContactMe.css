@@ -10,6 +10,7 @@
 
 .contactme{
     width: 77%;
+    padding: 32px 0 0 0;
     display: flex;
     flex-direction: column;
 }
@@ -56,11 +57,11 @@
 .button-send-message{
     width: 50%;
     height: 50px;
-    background-color: transparent;
+    background-color: var(--change-word-hover);
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 0px 24px;
-    color: var(--parraf-color);
+    color: var(--color-anchor);
     position: relative;
     z-index: 1;
     cursor: pointer;
@@ -68,9 +69,29 @@
 
 
 .button-send-message:hover{
-    background-color: var(--change-word-hover);
-    color: var(--bgHeader-footer);
+    background-color: var(--bgHeader-footer);
+    border: 1px solid var(--change-word-hover);
+    color: var(--white);
     font-weight: bold;
 }
 /* end of contact me */
 
+@media only screen and (min-width: 900px) and (max-width:1150px) {
+    .contactme{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .contactme{
+        text-align: center;
+    }
+    
+    .name-email-container {
+        flex-direction: column;
+    }
+
+    .button-send-message{
+        width: 80%;
+    }
+}

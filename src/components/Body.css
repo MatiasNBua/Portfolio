@@ -13,7 +13,6 @@
 
 .container-body{
     width: 100%; /* Cambiamos width: 77%; a width: 100%; */
-    min-width: 770px;
     display: flex;
     flex-direction: column;
     gap: 100px;
@@ -21,8 +20,8 @@
 /* end container body */
 
 @media only screen and (min-width: 850px) and (max-width:1150px) {
-    .full-container-body{
+    /* .full-container-body{
         margin-left: 45px;
-    }
+    } */
     
 }

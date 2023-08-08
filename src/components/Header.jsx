@@ -2,18 +2,19 @@ import React, { useEffect, useState } from 'react'
 import Logo from '../assets/Logo.svg'
 import LinkedinLogo from '../assets/rrss-Linkedin.svg'
 import GitHubLogo from '../assets/rrss-GitHub.svg'
+import HeaderMovile from './HeaderMovile'
 
 import "./Header.css"
 
 
 export default function Header() {
-    const [isOpen, setIsOpen] = useState(false)
+    const [isMobileVersion, setIsMobileVersion] = useState(false)
 
     const handleSizeVH = () => {
-        if (window.innerWidth > 800) {
-            setIsOpen(false)
+        if (window.innerWidth > 900) {
+            setIsMobileVersion(false)
         } else {
-            setIsOpen(true)
+            setIsMobileVersion(true)
         }
     }
     useEffect(() => {
@@ -30,7 +31,7 @@ export default function Header() {
     }, [])
 
     return (
-        <div className={`container-header ${isOpen ? 'open' : ''}`}>
+        <div className={`container-header ${isMobileVersion ? 'movile-version' : ''}`}>
             <div className="container-logo">
                 <a href="#aboutme">
                     <img src={Logo} alt="" />
@@ -40,6 +41,9 @@ export default function Header() {
                 <ul className="container-nav">
                     <li className="nav-section">
                         <a className='link' href='#aboutme'> Sobre mi </a>
+                    </li>
+                    <li className="nav-section">
+                        <a className='link' href='#experience'> Experiencia </a>
                     </li>
                     <li className="nav-section">
                         <a className='link' href='#proyects'> Proyectos </a>
@@ -58,6 +62,13 @@ export default function Header() {
                 </a>
             </div>
 
+            {isMobileVersion && (
+                <HeaderMovile />
+            )
+            }
+
         </div>
+
+        
     )
 }

@@ -17,6 +17,7 @@
 
   --black: rgb(0, 0, 0);
   --white: #ffffff;
+  --color-anchor: #47474D;
   --bgPage: #242424;
   --parraf-color: #8D8C96;
   --change-word-hover: #7fffd4;
@@ -41,6 +42,10 @@ body {
   padding: 0px;
 }
 
+body{
+  box-sizing: border-box;
+}
+
 p{
   margin: 0px;
   font-size: 22px;
@@ -52,9 +57,9 @@ h1,h2,h3,h4,h5,h6{
 
 a, a:link, a:visited{
   text-decoration: none;
-  color: #383838;
-  font-size: 22px;
-  font-weight: 600;
+  color: var(--color-anchor);
+  font-size: 20px;
+  font-weight: 400;
 }
 
 
@@ -118,4 +123,28 @@ textarea{
   font-size: 22px;
   color: #ffffff;
   resize: vertical;
+}
+
+@media only screen and (max-width: 900px) {
+  h1{
+    font-size: 45px;
+    font-weight: 800;
+  }
+  h2{
+    font-size: 35px;
+    font-weight: 550;
+  }
+  h3{
+    font-size: 30px;
+    font-weight: 500;
+  }
+  h4{
+    font-size: 26px;
+    font-weight: 400;
+  }
+  
+  h5{
+    font-size: 18px;
+    font-weight: 400;
+  }
 }

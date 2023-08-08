@@ -23,7 +23,8 @@ export default function AboutMe() {
         <section id='aboutme' className="container-aboutme">
             <div className="container-full-top">
                 <div className="container-title-abaoutme">
-                    <h1>Enseñando a programar mi futuro.</h1>
+                    <h1 className="tittle-aboutme">Enseñando a programar mi futuro.</h1>
+                    
                     <div className="title-changewords">
                         <h2>De profesor a</h2><ChangeWord words={['Desarrollador', 'FullStack']} />
                     </div>
@@ -38,13 +39,13 @@ export default function AboutMe() {
                     </p>
                     <div className="container-buttons-aboutme">
                         <Button text='Ver CV' onClick={openPDF} />
-                        <SecondButton text='Send Email' />
+                        <SecondButton text='Enviar Email' />
                     </div>
                 </div>
 
 
                 <div className="container-img-aboutme">
-                    <img src={MyImg} alt="" />
+                    <img className='myIMG' src={MyImg} alt="" />
                 </div>
 
             </div>
@@ -54,7 +55,7 @@ export default function AboutMe() {
                 <div className="container-services-quality">
                     <div className="services-quality">
                         <div className="title-sevices">
-                            <h3>Servicios de calidad en:</h3>
+                            <h3>Soluciones a medida en:</h3>
                         </div>
 
                         <div className="services">

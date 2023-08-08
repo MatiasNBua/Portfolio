@@ -51,16 +51,18 @@
 /* ------------------------------------ */
 
 /* ------------------------------------ */
+
+.slider-img{
+        display: none;
+    }
+
 #slider {
     width: 150vh;
     height: 80px;
     background-image: url(/src/assets/Tecnologies.svg);
     background-size: 100% 100%;
     animation: slider 40s infinite linear;
-}
-
-#slider img{
-    display: none;
+    display: block;
 }
 
 @keyframes slider{
@@ -71,39 +73,114 @@
 /* End container technologies */
 /* ------------------------------------ */
 
-@media only screen and (min-width: 1250px) and (max-width:1800px) {
+@media only screen and (min-width: 1650px) and (max-width:1800px) {
     #slider {
-        width: 135vh;
+        width: 125vh;
         background-size: 100% 100%;
         animation: slider 30s infinite linear;
     }
     
     @keyframes slider{
         to{
-            background-position: -135vh;
+            background-position: -125vh;
         }
     }
 
 }
 
-@media only screen and (min-width: 1250) and (max-width:1450px) {
+@media only screen and (min-width: 1450px) and (max-width:1650px) {
     #slider {
-        width: 115vh;
+        width: 110vh;
         background-size: 100% 100%;
         animation: slider 30s infinite linear;
     }
     
     @keyframes slider{
         to{
-            background-position: -115vh;
+            background-position: -110vh;
         }
     }
-    
+}
+
+@media only screen and (min-width: 1250px) and (max-width:1450px) {
     #slider {
-        background-image: none;
+        width: 95vh;
+        background-size: 100% 100%;
+        animation: slider 30s infinite linear;
+    }
+    
+    @keyframes slider{
+        to{
+            background-position: -95vh;
+        }
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width:1250px) {
+    #slider {
+        width: 88vh;
+        background-size: 100% 100%;
+        animation: slider 30s infinite linear;
+    }
+    
+    @keyframes slider{
+        to{
+            background-position: -88vh;
+        }
+    }
+}
+
+@media only screen and (min-width: 1050px) and (max-width:1150px) {
+    #slider {
+        display: none;
     }
 
-    #slider img {
+    .container-slider {
+        height: 100%;
+        overflow: visible;
+        
+    }
+
+    .container-technologies {
+        height: 100%;
+    }
+
+    .slider-img{
         display: block;
+    }
+
+}
+
+@media only screen and (min-width: 900px) and (max-width:1050px) {
+    #slider {
+        display: none;
+    }
+
+    .container-slider {
+        height: 100%;
+        overflow: visible;
+        
+    }
+
+    .container-technologies {
+        height: 100%;
+    }
+
+    .slider-img{
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 900px) and (max-width:1150px) {
+    .h4{
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .h4{
+        text-align: center;
     }
 }

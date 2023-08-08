@@ -1,18 +1,18 @@
 .button {
-    width: 50%;
-    height: 50px;
-    background-color: transparent;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 0px 24px;
+  width: 50%;
+  height: 50px;
+  background-color: var(--change-word-hover);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 4px;
+  color: var(--color-anchor);
+  position: relative;
+  z-index: 1;
+}
+
+.button:hover {
     color: var(--white);
-    position: relative;
-    z-index: 1;
-  }
-  
-  .button:hover {
-    color: var(--bgHeader-footer);
-    background-color: var(--change-word-hover);
+    background-color: var(--bgHeader-footer);
+    border: 1px solid var(--change-word-hover);
     font-weight: bold;
-  }
-  
+}

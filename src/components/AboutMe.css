@@ -1,4 +1,5 @@
 .container-full-top {
+    padding: 210px 0 0 0;
     display: flex;
     width: 77%;
 }
@@ -24,6 +25,7 @@
 }
 
 .description-aboutme {
+    color: var(--parraf-color);
     width: 80%;
 }
 
@@ -45,9 +47,9 @@
     width: 40%;
     padding: 8px;
     display: flex;
-    gap: 48px;
+    gap: 32px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .container-img-aboutme {
@@ -66,6 +68,10 @@
     gap: 48px;
 }
 
+.title-sevices {
+    text-align: left;
+}
+
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -75,19 +81,14 @@
 
 .services img {
     transition: transform 0.3s ease;
-    /* Ajusta la duración y el tipo de transición según tus necesidades */
 }
 
 .services img:hover {
     transform: translateY(-5px);
-    /* Ajusta la cantidad de desplazamiento hacia arriba según tus necesidades */
     box-shadow: 0 5px 0 0 var(--bgIcons-services);
     border-radius: 16px;
 }
 
-/* .service {
-    width: 300px;
-} */
 
 /*  End Container Services Quality */
 /* ------------------------------------ */
@@ -130,6 +131,7 @@
     }
 
     .container-full-top {
+        padding: 200px 0 0 0;
         width: 100%;
         display: flex;
     }
@@ -139,7 +141,7 @@
     }
 }
 
-@media only screen and (min-width: 850px) and (max-width:1150px) {
+@media only screen and (min-width: 900px) and (max-width:1150px) {
     .services {
         display: flex;
         flex-wrap: wrap;
@@ -147,12 +149,105 @@
         gap: 40px;
     }
 
+    .container-full-top {
+        padding: 30px 0 0 0;
+        flex-direction: column-reverse;
+        gap: 32px;
+    }
+
     .container-img-aboutme {
-        display: none;
+        display: flex;
+        justify-content: center;
     }
 
     .container-buttons-aboutme {
         width: 60%;
     }
+
+    .container-title-abaoutme {
+        align-items: center;
+    }
+
+    .tittle-aboutme {
+        text-align: center;
+        width: 90%
+    }
+
+    .services-quality {
+        align-items: center;
+    }
+
+    /* .title-changewords {
+        width: 95%;
+        margin-left: 34px;
+    } */
+}
+
+@media only screen and (min-width: 600px) and (max-width:900px) {
+    .container-full-bot {
+        width: 80%;
+    }
+
+    .services {
+        gap: 16px;
+    }
+
+    .services .service {
+        width: 47%;
+    }
+
+    .services img:hover {
+        border-radius: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 900px) {
+    .container-full-top {
+        flex-direction: column-reverse;
+    }
+
+    .container-img-aboutme img {
+        width: 35%;
+        border-radius: 8px;
+    }
+
+    .container-buttons-aboutme {
+        width: 100%;
+    }
+
+    .services {
+        justify-content: center;
+    }
+
+    .title-changewords {
+        flex-direction: column;
+    }
+
+    .container-full-top {
+        gap: 40px;
+    }
+
+    .container-title-abaoutme {
+        gap: 16px;
+    }
+
+    .myIMG {
+        width: 35%;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .container-full-top {
+        padding: 40px 0 0 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .container-img-aboutme {
+        display: none;
+    }
+
 
 }

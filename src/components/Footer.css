@@ -4,7 +4,7 @@
     align-items: center;
     bottom: 0px;
     height: 164px;
-    width: 99.83%;
+    width: 100%;
     background-color: var(--bgHeader-footer);
     border-top: 2px solid var(--border-color);
 }

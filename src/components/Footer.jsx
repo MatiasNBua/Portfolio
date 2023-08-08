@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="container-section">
                 <div className="logo-copyRigth">
                     <img src={Logo} alt="" />
-                    <p className='hecho-por'>CopyRight 2023
+                    <p className='hecho-por'>© 2023 Portfolio by
                     </p>
                 </div>
 
