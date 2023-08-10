@@ -6,7 +6,7 @@ import ServiceWeb from '../assets/serviceDeveloper-web.svg'
 import ServiceSupport from '../assets/support-manteince.svg'
 import ServiceApi from '../assets/gestion-api.svg'
 import ServiceDessing from '../assets/ui.svg'
-import ServiceMovile from '../assets/serviceMovile.svg'
+import ServiceMovile from '../assets/ServiceMovile.svg'
 import ServiceDB from '../assets/serviceDatabase.svg'
 
 import CV from '../assets/CV/CV-MatiasBua.pdf'
