@@ -1,6 +1,7 @@
 .second-button{
     width: 45%;
     height: 50px;
+    padding: 0 4px;
     border-radius: 8px;
     display: flex;
     align-items: center;
@@ -12,6 +13,12 @@
 .second-button:hover{
     border: 1px solid var(--change-word-hover);
     background-color: var(--bgHeader-footer);
-    font-weight: 600;
+    font-weight: bold;
     color: var(--white) !important;
+}
+
+@media only screen and (max-width: 900px) {
+    .second-button{
+        width: 60%;
+    }
 }

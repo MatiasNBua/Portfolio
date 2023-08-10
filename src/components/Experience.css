@@ -11,12 +11,12 @@
 }
 
 .title-experience {
-    width: 77%;
+    width: 74%;
     padding: 32px 0 0 0;
 }
 
 .experiences {
-    width: 77%;
+    width: 73%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,32 +45,27 @@
 
 .proyects .experience {
     transition: transform 0.3s ease;
-    /* Ajusta la duración y el tipo de transición según tus necesidades */
 }
 
 
 .experience {
     transition: transform 0.3s ease;
-    /* Ajusta la duración y el tipo de transición según tus necesidades */
 }
 
 .experience:hover {
     transform: translateY(-5px);
-    /* Ajusta la cantidad de desplazamiento hacia arriba según tus necesidades */
     box-shadow: 0 5px 0 0 var(--hover-experience-proyect);
     border-radius: 12px;
-    /* z-index: 0; */
 }
 
-.experience:hover .img-experience img{
+.experience:hover .img-experience img {
     transform: translateY(-5px);
-    /* Ajusta la cantidad de desplazamiento hacia arriba según tus necesidades */
     box-shadow: 0 5px 0 0 var(--hover-experience-proyect);
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 }
 
-.img-experience{
+.img-experience {
     display: flex;
     align-items: center;
 }
@@ -88,27 +83,63 @@
         justify-content: center;
     }
 
-    .title-experience{
+    .title-experience {
         text-align: center;
     }
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 600px) and (max-width:900px) {
+    .experiences {
+        width: 75%;
+    }
+
+    .text-experience {
+        width: 100%;
+    }
+
     .experience {
         display: flex;
         flex-direction: column;
-        padding: 24px;
+        padding: 16px;
         gap: 32px;
         justify-content: center;
     }
 
-    .text-experience{
+    .img-experience {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .experiences {
         width: 100%;
     }
 
-    .experience{
+    .experience {
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        gap: 32px;
+        justify-content: center;
+    }
+
+    .JUNMAT {
         width: 100%;
+    }
+
+    .text-experience {
+        width: 100%;
+    }
+
+    .container-experiences {
+        margin: 24px;
+    }
+
+    .img-experience {
+        display: flex;
+        justify-content: center;
     }
 
 }

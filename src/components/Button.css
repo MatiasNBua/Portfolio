@@ -1,5 +1,5 @@
 .button {
-  width: 50%;
+  width: 45%;
   height: 50px;
   background-color: var(--change-word-hover);
   border: 1px solid var(--border-color);

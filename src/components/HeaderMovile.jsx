@@ -30,6 +30,9 @@ export default function HeaderMovile () {
                         <a className='link' href='#aboutme' onClick={handleOpenMenu}> Sobre mi </a>
                     </li>
                     <li className="nav-section">
+                        <a className='link' href='#experience' onClick={handleOpenMenu}> Experiencia </a>
+                    </li>
+                    <li className="nav-section">
                         <a className='link' href='#proyects' onClick={handleOpenMenu}> Proyectos </a>
                     </li>
                     <li className="nav-section">

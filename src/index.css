@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
 
-:root{
+:root {
   font-family: Manrope, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -31,7 +31,7 @@
 }
 
 
-html{
+html {
   scroll-behavior: smooth;
   background-color: var(--bgPage);
 }
@@ -42,20 +42,27 @@ body {
   padding: 0px;
 }
 
-body{
+body {
   box-sizing: border-box;
 }
 
-p{
+p {
   margin: 0px;
   font-size: 22px;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0px;
 }
 
-a, a:link, a:visited{
+a,
+a:link,
+a:visited {
   text-decoration: none;
   color: var(--color-anchor);
   font-size: 20px;
@@ -63,24 +70,27 @@ a, a:link, a:visited{
 }
 
 
-h1{
+h1 {
   font-size: 55px;
   font-weight: 900;
 }
-h2{
+
+h2 {
   font-size: 45px;
   font-weight: 650;
 }
-h3{
+
+h3 {
   font-size: 40px;
   font-weight: 600;
 }
-h4{
+
+h4 {
   font-size: 32px;
   font-weight: 400;
 }
 
-h5{
+h5 {
   font-size: 22px;
   font-weight: 400;
 }
@@ -90,33 +100,55 @@ h5{
   font-weight: 500;
 } */
 
-section[id]{
+section[id] {
   scroll-margin-top: 88px;
 }
 
-label{
+label {
   padding: 6px;
 }
 
-button{
+button {
   font-size: 18px;
 }
 
-input{
+input {
   background-color: transparent;
-  border: 1px solid #7C7B84;
+  border: 1px solid var(--border-color);
   border-radius: 4px;
   padding: 12px;
   font-size: 24px;
-  color: #ffffff;
+  color: var(--white);
   outline: none;
 }
 
-input option{
-  background-color: transparent;
+input:focus {
+  border: 1px solid var(--change-word-hover);
 }
 
-textarea{
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px var(--shadow-box) inset;
+  transition: background-color 5000s ease-in-out 0s;
+
+}
+
+input:-webkit-autofill::first-line,
+textarea:-webkit-autofill::first-line,
+input:-webkit-autofill:hover::first-line,
+textarea:-webkit-autofill:hover::first-line {
+  color: var(--white);
+  font-family: Manrope, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+}
+
+textarea {
   background-color: transparent;
   outline: none;
   padding: 12px;
@@ -125,26 +157,41 @@ textarea{
   resize: vertical;
 }
 
+textarea::placeholder {
+  font-family: Manrope, sans-serif;
+}
+
+textarea:focus {
+  border: 1px solid var(--change-word-hover);
+}
+
 @media only screen and (max-width: 900px) {
-  h1{
+  h1 {
     font-size: 45px;
     font-weight: 800;
   }
-  h2{
+
+  h2 {
     font-size: 35px;
     font-weight: 550;
   }
-  h3{
+
+  h3 {
     font-size: 30px;
     font-weight: 500;
   }
-  h4{
+
+  h4 {
     font-size: 26px;
     font-weight: 400;
   }
-  
-  h5{
+
+  h5 {
     font-size: 18px;
     font-weight: 400;
+  }
+
+  p {
+    font-size: 16px;
   }
 }

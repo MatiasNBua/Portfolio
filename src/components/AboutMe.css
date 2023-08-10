@@ -95,7 +95,7 @@
 
 @media only screen and (min-width: 1150px) and (max-width:1800px) {
     .container-title-abaoutme {
-        width: 77%;
+        width: 74%;
     }
 
     .container-full-top {
@@ -121,8 +121,15 @@
     }
 
     .container-full-bot {
-        width: 77%;
+        width: 74%;
     }
+}
+
+@media only screen and (min-width: 1550px) and (max-width:1700px) {
+    .container-full-top {
+        padding: 140px 0 0 0;
+    }
+
 }
 
 @media only screen and (min-width: 1150px) and (max-width:1550px) {
@@ -131,9 +138,13 @@
     }
 
     .container-full-top {
-        padding: 200px 0 0 0;
+        padding: 120px 0 0 0;
         width: 100%;
         display: flex;
+    }
+
+    .container-aboutme {
+        gap: 220px;
     }
 
     .container-buttons-aboutme {
@@ -176,11 +187,6 @@
     .services-quality {
         align-items: center;
     }
-
-    /* .title-changewords {
-        width: 95%;
-        margin-left: 34px;
-    } */
 }
 
 @media only screen and (min-width: 600px) and (max-width:900px) {

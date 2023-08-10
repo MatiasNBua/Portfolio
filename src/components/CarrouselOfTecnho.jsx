@@ -1,6 +1,4 @@
-import TecnhologiesBox from '../assets/TecnologiesBox.svg'
-import TecnhologiesIMG from '../assets/TecnologiesBoxIMG.svg'
-
+import TecnhologiesBox from '../assets/Tecnologies (1).svg'
 import './CarrouselOfTecnho.css'
 
 export default function Carrusel() {

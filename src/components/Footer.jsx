@@ -13,9 +13,10 @@ export default function Footer() {
 
             <div className="container-section">
                 <div className="logo-copyRigth">
-                    <img src={Logo} alt="" />
-                    <p className='hecho-por'>© 2023 Portfolio by
-                    </p>
+                    <a href="#aboutme">
+                    <img src={Logo} alt="logo with my name 'MatiasNWeb'" />
+                    </a>
+                    <p className='hecho-por'> © 2023 Portfolio by </p>
                 </div>
 
                 <div className="container-social-network-footer">
