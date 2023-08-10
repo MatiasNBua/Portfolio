@@ -120,8 +120,8 @@
 .tooltip-label::before {
     width: max-content;
     position: absolute;
-    bottom: 70%;
-    left: 5%;
+    bottom: 24%;
+    left: 6%;
     padding: 6px;
     color: white;
     font-size: 16px;
@@ -132,10 +132,6 @@
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     border-radius: 6px;
-    /* border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; */
 }
 
 .tooltip-label:hover::before {
