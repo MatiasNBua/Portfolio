@@ -35,7 +35,7 @@ export default function Experience() {
                         </div>
                     </div>
                     <div className="img-experience">
-                        <img src={PortadaProyect} alt="" />
+                        <img className='img' src={PortadaProyect} alt="" />
                     </div>
                 </div>
                 <div className="experience">
@@ -58,7 +58,7 @@ export default function Experience() {
                         </div>
                     </div>
                     <div className="img-experience">
-                        <img className='JUNMAT' src={JUNMAT1} alt="" />
+                        <img className='img' src={JUNMAT1} alt="" />
                     </div>
                 </div>
             </div>

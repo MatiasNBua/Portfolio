@@ -1,6 +1,7 @@
 import TecnhoProyect from './TecnhologieProyect'
 import PortadaProyect from '../assets/port-project.svg'
-
+import PostIts from '../assets/POSTITS.svg'
+import ArtBidder from '../assets/ArtBidder.svg'
 import './Proyect.css'
 
 export default function Proyects() {
@@ -31,7 +32,7 @@ export default function Proyects() {
                         </div>
                     </div>
                     <div className="img-proyect">
-                        <img src={PortadaProyect} alt="" />
+                        <img className='img' src={PortadaProyect} alt="" />
                     </div>
                 </div>
 
@@ -55,7 +56,7 @@ export default function Proyects() {
                         </div>
                     </div>
                     <div className="img-proyect">
-                        <img src={PortadaProyect} alt="" />
+                        <img className='img' src={ArtBidder} alt="" />
                     </div>
                 </div>
 
@@ -79,7 +80,7 @@ export default function Proyects() {
                         </div>
                     </div>
                     <div className="img-proyect">
-                        <img src={PortadaProyect} alt="" />
+                        <img className='img' src={PostIts} alt="" />
                     </div>
                 </div>
             </div>
